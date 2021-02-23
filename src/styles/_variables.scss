@@ -22,14 +22,15 @@ $fontFamily: Arial;
 $font-dark: #333333;
 $font-light: #808080;
 $font-link: #005da1;
+
 @font-face {
 	font-family: "Arial";
-	src: url("~@/assets/fonts/Arial-Black.eot");
-	src: local("Arial"), local("Arial-Black"), url("~@/assets/fonts/Arial-Black.eot?#iefix") format("embedded-opentype"),
-		url("~@/assets/fonts/Arial-Black.woff") format("woff"),
-		url("~@/assets/fonts/Arial-Black.ttf") format("truetype");
-	font-weight: 300;
+	src: url("~@/assets/fonts/ArialRegular.eot");
+	src: url("~@/assets/fonts/ArialRegular.eot?#iefix") format("embedded-opentype"),
+		url("~@/assets/fonts/ArialRegular.woff") format("woff"),
+		url("~@/assets/fonts/ArialRegular.ttf") format("truetype");
 	font-style: normal;
+	font-weight: normal;
 }
 
 :export {

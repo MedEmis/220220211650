@@ -1,7 +1,7 @@
 {
   "name": "vue_test_task",
   "version": "0.1.0",
-  "homepage": "https://vue_test_task.com",
+  "homepage": "https://vue_test_chat.com",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",

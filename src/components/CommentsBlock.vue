@@ -36,6 +36,7 @@ export default {
 .comments-block {
   flex: 0 0 50%;
   position: relative;
+  width: 100%;
   &__title {
     display: flex;
     justify-content: space-between;

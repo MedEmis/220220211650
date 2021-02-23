@@ -1,0 +1,38 @@
+//backgrounds
+$main-bg: #ffffff;
+
+$description-bg: #fffbc8;
+$range-greater-bg: #b1e19b;
+$range-smaller-bg: #ace2f8;
+$icons-bg: #dadada;
+$comment-bg: #f2fbff;
+$send-button-bg: #fdd639;
+
+$footer-bg: #f2f2f2;
+
+//paddings
+$body-padding: 22px;
+$footer-padding: 20px 21px 30px 21px;
+
+//margins
+$card-padding: 130px;
+
+//font
+$fontFamily: Arial;
+$font-dark: #333333;
+$font-light: #808080;
+$font-link: #005da1;
+@font-face {
+	font-family: "Arial";
+	src: url("~@/assets/fonts/Arial-Black.eot");
+	src: local("Arial"), local("Arial-Black"), url("~@/assets/fonts/Arial-Black.eot?#iefix") format("embedded-opentype"),
+		url("~@/assets/fonts/Arial-Black.woff") format("woff"),
+		url("~@/assets/fonts/Arial-Black.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+:export {
+	range_greater: $range-greater-bg;
+	range_smaller: $range-smaller-bg;
+}

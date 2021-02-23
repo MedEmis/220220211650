@@ -112,11 +112,13 @@ export default {
       let mm = String(today.getMonth() + 1).padStart(2, "0");
       let yyyy = today.getFullYear();
       today = `${dd} ${mm} ${yyyy}`;
-      this.visitorComments.comments.push({
-        name: this.inputName,
-        date: today,
-        text: this.message,
-      });
+      if (this.message.length) {
+        this.visitorComments.comments.push({
+          name: this.inputName,
+          date: today,
+          text: this.message,
+        });
+      }
       this.message = "";
     },
   },
@@ -128,7 +130,7 @@ export default {
   position: relative;
   min-height: 500px;
   max-height: 900px;
-  height: 900px;
+  height: auto;
   max-width: 720px;
   width: 100%;
   background: $main-bg;
@@ -174,6 +176,13 @@ export default {
       font-weight: 700;
       &:hover {
         background: darken($send-button-bg, 10%);
+        -webkit-background: darken($send-button-bg, 10%);
+        -moz-background: darken($send-button-bg, 10%);
+        -ms-background: darken($send-button-bg, 10%);
+        -o-background: darken($send-button-bg, 10%);
+      }
+      @media (max-width: 335px) {
+        padding: 15px 40px;
       }
     }
   }

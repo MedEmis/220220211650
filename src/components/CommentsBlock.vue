@@ -42,7 +42,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     padding: 6px 0;
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       flex-direction: column;
     }
     &_text {
@@ -133,13 +133,21 @@ export default {
   &__body {
     font-family: $fontFamily;
     font-style: normal;
-    font-weight: normal;
+    -webkit-font-weight: 300;
+    -moz-box-font-weight: 300;
+    -ms-box-font-weight: 300;
+    -o-box-font-weight: 300;
+    font-weight: 300;
     font-size: 14px;
     line-height: 19px;
     color: $font-dark;
     background: $comment-bg;
     padding: 15px;
     border: 1px solid #c4cbcf;
+    -webkit-box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
+    -moz-box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
+    -ms-box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
+    -o-box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
     box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
   }
 }
